@@ -62,6 +62,12 @@ main .btn {
   flex-wrap: wrap;
 }
 
+.quiz__h1 {
+  font-weight: 700;
+  font-size: 46px;
+  color: #293264;
+}
+
 .quiz__btn {
   margin-top: 20px;
   width: fit-content;
@@ -95,12 +101,18 @@ main .btn {
   width: 90%;
 }
 
-#qna button {
+.qna__btns {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 18px;
+  gap: 20px;
+}
+
+.unselected {
   width: fit-content;
   height: fit-content;
   background-color: #f5f7fb;
   border-radius: 10px;
-  border: none;
   cursor: pointer;
   padding: 5px 20px;
 
@@ -112,11 +124,55 @@ main .btn {
   color: #293264;
 }
 
-.qna__btns {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 18px;
-  gap: 20px;
+.selected {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 20px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #293264;
+
+  background-color: #d6dbf5;
+  border: none;
+}
+
+.correct {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 20px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #293264;
+
+  background-color:  #94D7A2;
+  border: none;
+}
+
+.incorrect {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 20px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #293264;
+
+  background-color:  #F8BCBC;
+  border: none;
 }
 
 .qna__line {
